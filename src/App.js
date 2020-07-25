@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CustomerList from './components/CustomerList/CustomerList';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+      <h2>Customer Portal</h2>
+      </div>
+      <div>
+        <a href="#">Create New Customer</a>
+      </div>
+      <br></br>
+      <div>
+         <CustomerList />
+      </div>
     </div>
   );
 }
