@@ -2,19 +2,22 @@ import React from 'react';
 
 const AddNewCustomer = () => {
     return (
-        <div>
+        <form>
             <div>
-            <span>Customer List</span>
+                <h3>Add new customer</h3>
             </div>
             <div>
-                <table>
-                    <tr>
-                        <td>Customer Name</td>
-                        <td>Customer Age</td>
-                    </tr>
-                </table>
+                <label for="name"> Name </label>
+                <input type="text" placeholder="Enter your name" name="name"></input>
             </div>
-        </div>
+            <div>
+                <label for="age"> Age </label>
+                <input type="text" placeholder="age" name="age"></input>
+            </div>
+            <div>
+                <button type="submit">Save</button>
+            </div>
+        </form>
     );
 }
 

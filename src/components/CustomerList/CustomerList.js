@@ -4,7 +4,7 @@ const CustomerList = () => {
     return (
         <div>
             <div>
-                <span>Customer List</span>
+                <h3>All customers</h3>
             </div>
             <br></br>
             <div>
