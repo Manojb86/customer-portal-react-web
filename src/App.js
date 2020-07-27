@@ -6,6 +6,7 @@ import CustomerList from './components/CustomerList/CustomerList';
 import AddNewCustomer from './components/AddNewCustomer/AddNewCustomer';
 
 const App = () => {
+  
   return (
     <HashRouter>
     <div>

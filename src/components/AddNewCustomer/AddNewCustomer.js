@@ -1,23 +1,25 @@
 import React from 'react';
+import { Form, Button  } from 'react-bootstrap';
 
 const AddNewCustomer = () => {
     return (
-        <form>
-            <div>
-                <h3>Add new customer</h3>
-            </div>
-            <div>
-                <label for="name"> Name </label>
-                <input type="text" placeholder="Enter your name" name="name"></input>
-            </div>
-            <div>
-                <label for="age"> Age </label>
-                <input type="text" placeholder="age" name="age"></input>
-            </div>
-            <div>
-                <button type="submit">Save</button>
-            </div>
-        </form>
+        <Form>
+            <Form.Group controlId="formBasicName">
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="text" placeholder="Enter name" />
+                <Form.Text className="text-muted">
+                Please enter customer name here.
+                </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicAge">
+                <Form.Label>Age</Form.Label>
+                <Form.Control type="text" placeholder="Age" />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+                Submit
+            </Button>
+        </Form>
     );
 }
 
